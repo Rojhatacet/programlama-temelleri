@@ -31,16 +31,16 @@ pozitif_mi = 13 > 0
 print("Sayı pozitif mi?", pozitif_mi)
 
 #6.Kullanıcıdan bir kelime alıp kelimenin ilk 3 harfini ve son 2 harfini yazdıran program.
-x = "aysenur"
-y = "aysenur"
+x = "rojhat"
+y = "rojhat"
 print(x[0:5])
 print(y[-3:])
 
 #7.İki sayının ortalamasını hesaplayıp, sonucu ondalıklı sayı olarak gösteren program.
 sayi1 = int(input("sayı1"))
 sayi2 = int(input("sayı2"))
-sayi_1 = sayi1 * 0.4
-sayi_2 = sayi2 * 0.6
+sayi_1 = sayi1 * 0.6
+sayi_2 = sayi2 * 0.8
 ortalama = sayi_1 + sayi_2
 print(ortalama)
 
@@ -76,3 +76,4 @@ sayi = int(input("Bir sayı girin: "))
 bolunur_mu = (sayi % 2 == 0) and (sayi % 6 == 0)
 print("Sayı hem 3'e hem de 5'e tam bölünüyor mu?", bolunur_mu)
 print(sayi % 3 == 0 and sayi % 5 == 0) 
+
