@@ -1,55 +1,78 @@
-isim = input("isminizi yazın")
-soyad = input("soyadınızı yazın")
-print(isim, soyad)
+@@ -0,0 +1,76 @@
+#1. Kullanıcıdan adını ve soyadını ayrı ayrı alıp, tam adını ekrana yazdıran program.
+ad = input("Adınızı girin: ")
+soyad = input("Soyadınızı girin: ")
+tam_ad = ad + " " + soyad
+print("Tam adınız:", tam_ad)
 
-x = 7
-y = 77
+#2.İki sayının toplamı, farkı ve çarpımı
+x = 10
+y = 5
 print(x + y)
 print(x - y)
 print(x * y)
 
-yas = int(input("yaş girin"))
-print(yas>18)
+#3.Kullanıcının yaşını alıp, 20 yaşından büyük olup olmadığını True/False olarak gösteren program
+yas = input("lütfen yaşınızı girin")
+sonuç = int(yas)<20
+print(sonuç)
 
-a = int(input("kısa kenar:"))
-b = int(input("uzun kenarını gir"))
-alan = a * b
-cevre = 2 * (a + b)
-print("alan:", alan)
-print("çevre:", cevre)
+#4.Dikdörtgenin alanını ve çevresini hesaplayan program
+kisa_kenar = float(input("Kısa kenarı girin: "))
+uzun_kenar = float(input("Uzun kenarı girin: "))
+alan = kisa_kenar * uzun_kenar
+cevre = 2 * (kisa_kenar + uzun_kenar)
+print("Alan:", alan)
+print("Çevre:", cevre)
 
-sayı = int(input("bir sayı girin:"))
-print("pozitif mi?", sayı > 0)
+#5. Girilen bir sayının pozitif olup olmadığını kontrol eden program.
+sayi = float(input("Bir sayı girin: "))
+pozitif_mi = 13 > 0
+print("Sayı pozitif mi?", pozitif_mi)
 
-kelime = input("Bir kelime girin:")
-print("ilk 3 harf:", kelime[:3])
-print("son 2 harf:", kelime[-2])
+#6.Kullanıcıdan bir kelime alıp kelimenin ilk 3 harfini ve son 2 harfini yazdıran program.
+x = "aysenur"
+y = "aysenur"
+print(x[0:5])
+print(y[-3:])
 
-a = float(input("1.sayıyı giriniz:"))
-b = float(input("ikinci sayıyı giriniz:"))
-sonuc = (a + b) / 2
-print("sonuç:", sonuc)
+#7.İki sayının ortalamasını hesaplayıp, sonucu ondalıklı sayı olarak gösteren program.
+sayi1 = int(input("sayı1"))
+sayi2 = int(input("sayı2"))
+sayi_1 = sayi1 * 0.4
+sayi_2 = sayi2 * 0.6
+ortalama = sayi_1 + sayi_2
+print(ortalama)
 
-a= int(input("1. sayıyı giriniz:"))
-b = int(input("2. sayıyı giriniz:"))
-print(a % 2 == 0 and b % 2 == 0)
+#8.Kullanıcının girdiği iki sayının her ikisinin de çift sayı olup olmadığını kontrol eden program
+sayi1 = int(input("1. sayıyı girin: "))
+sayi2 = int(input("2. sayıyı girin: "))
+sonuç = (sayi1 % 2 == 0) and (sayi2 % 2 == 0)
+print("Her iki sayı da çift mi?", sonuç)
 
-metin = input("bir metin giriniz:")
-print("uzunluk:", len(metin))
-print("büyük harf hali:", metin.upper())
+#9.Girilen bir metnin uzunluğunu ve büyük harfe çevrilmiş halini ekrana yazdıran program
+metin = input("Bir metin girin: ")
+uzunluk = len(metin)
+buyuk_harf = metin.upper()
+print("Metnin uzunluğu:", uzunluk)
+print("Büyük harf hali:", buyuk_harf)
 
+#10.Dairenin alanını hesaplayan program (pi = 3.14)
+pi = 3.14
+yaricap = float(input("Dairenin yarıçapını girin: "))
+alan = pi * (yaricap ** 2)
+print("Dairenin alanı:", alan)
 
+#11.İki sayının eşit olup olmadığını ve birincinin ikinciden büyük olup olmadığını gösteren program
+sayi1 = int(input("1. sayıyı girin: "))
+sayi2 = int(input("2. sayıyı girin: "))
+esit_mi = (sayi1 == sayi2)
+birinci_buyuk_mu = (sayi1 > sayi2)
+print("İki sayı eşit mi?", esit_mi)
+print("Birinci sayı ikinciden büyük mü?", birinci_buyuk_mu)
 
-pi = 3
-r = float(input("yarıçap girin"))
-
-alan = pi * (r ** 2)
-print("ALAN:", alan)
-
-a = int(input("1. sayıyı giriniz:"))
-b = int(input("2 sayıyı giriniz"))
-print("eşit mi:", a == b)
-print("birinci büyük mü:", a > b)
-
-sayi = int(input("sayı girin:"))
+#12.Bir sayının hem 2’e hem de 6’e tam bölünüp bölünmediğini kontrol eden program
+sayi = int(input("Bir sayı girin: "))
+bolunur_mu = (sayi % 2 == 0) and (sayi % 6 == 0)
+print("Sayı hem 3'e hem de 5'e tam bölünüyor mu?", bolunur_mu)
 print(sayi % 3 == 0 and sayi % 5 == 0) 
