@@ -1,4 +1,4 @@
-@@ -0,0 +1,76 @@
+
 #1. Kullanıcıdan adını ve soyadını ayrı ayrı alıp, tam adını ekrana yazdıran program.
 ad = input("Adınızı girin: ")
 soyad = input("Soyadınızı girin: ")
@@ -76,4 +76,5 @@ sayi = int(input("Bir sayı girin: "))
 bolunur_mu = (sayi % 2 == 0) and (sayi % 6 == 0)
 print("Sayı hem 3'e hem de 5'e tam bölünüyor mu?", bolunur_mu)
 print(sayi % 3 == 0 and sayi % 5 == 0) 
+
 
